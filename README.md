@@ -2,7 +2,7 @@
 
 This project is a Python-based tool that allows users to input a **regular expression** and visualize its corresponding **Non-deterministic Finite Automaton (NFA)**. The application features a graphical user interface (GUI) built using Tkinter and visualizes the NFA using the Graphviz library.
 
-## ðŸš€ Features
+## Features
 
 - Accepts regular expressions with support for:
   - Concatenation (implicit)
@@ -17,7 +17,7 @@ This project is a Python-based tool that allows users to input a **regular expre
 - Displays detailed NFA transitions (states and transitions).
 - Simple, interactive GUI for ease of use.
 
-## ðŸ–¥ï¸ GUI Overview
+## GUI Overview
 
 - Input field for the regular expression
 - "Generate NFA" button to process and display the result
@@ -25,7 +25,7 @@ This project is a Python-based tool that allows users to input a **regular expre
 - Textual display of the start state, accept state, and all transitions
 - "Clear" and "Exit" buttons for managing input and exiting the program
 
-## ðŸ§ª Example
+## Example
 
 For the input regular expression:
 
@@ -35,7 +35,7 @@ For the input regular expression:
 
 The program generates and displays an NFA accepting the language that matches this regex.
 
-## ðŸ› ï¸ Requirements
+## Requirements
 
 - Python 3.x
 - Required Python packages:
@@ -53,7 +53,7 @@ pip install pillow graphviz
 
 Ensure that the Graphviz binaries are accessible via system PATH (especially on Windows).
 
-## ðŸ“¦ How to Run
+## How to Run
 
 1. Clone or download this repository.
 2. Ensure all dependencies are installed.
@@ -63,22 +63,19 @@ Ensure that the Graphviz binaries are accessible via system PATH (especially on 
 python your_filename.py
 ```
 
-## ðŸ“š How it Works
+## How it Works
 
 1. **Regex Parsing**: Supports simple character classes like `[a-z]` and converts infix to postfix notation.
 2. **NFA Construction**: Uses Thompson's construction to build an NFA from the postfix regex.
 3. **Graph Visualization**: Converts the NFA into a Graphviz DOT format, renders it as an image, and displays it in the GUI.
 
-## âš ï¸ Limitations
+## Limitations
 
 - Character classes only support simple ranges like `[a-z]`.
 - Doesn't currently support escaped characters (like `\*` or `\.`).
 - No support for full regex features like lookaheads or backreferences.
 
-## ðŸ“„ License
+## License
 
 This project is open-source and free to use. You can modify or adapt it for personal or educational purposes.
 
----
-
-Made with â¤ï¸ for automata theory and regex lovers!
